@@ -1,0 +1,93 @@
+* Honmaple(maplebb)
+
+  [[license][https://img.shields.io/badge/license-GPL3.0-blue.svg]]
+
+  [[https://raw.githubusercontent.com/honmaple/maple-bbs/master/screenshooter/index.png]]
+  [[https://raw.githubusercontent.com/honmaple/maple-bbs/master/screenshooter/board.png]]
+  [[https://raw.githubusercontent.com/honmaple/maple-bbs/master/screenshooter/ask.png]]
+
+  This is a free,open-source forums system based on the flask
+
+** Features
+   + Register & login & forget password
+   + Board and tags
+   + Collect
+   + Like replies
+   + Follow tags,users,topics
+   + Privacy setting
+   + Choice markdown to ask
+   + Tags rss
+   + Avatar
+   + Topic vote
+     
+** Installation
+
+*** Install necessary package
+    Some package is not neccessary
+    #+BEGIN_SRC python
+   pip install -r requirements.txt
+    #+END_SRC
+
+    Beacause flask_maple.rbac isn't uploaded to pypi
+    you should 
+    #+BEGIN_SRC shell
+git clone https://github.com/honmaple/flask-maple
+cd flask-maple
+git checkout develop
+pip uninstall flask-maple
+python setup.py install
+    #+END_SRC
+    to install flask-maple
+
+*** Config
+    #+BEGIN_SRC shell
+    mv config.example config
+    #+END_SRC
+    after finished configure
+
+    *For Production*
+    Please set DEBUG = False or change *maple/__init__.py*
+    #+BEGIN_SRC python
+    app.config.from_object('config.config')
+    #+END_SRC
+    to
+    #+BEGIN_SRC python
+    app.config.from_object('config.production')
+    #+END_SRC
+
+
+*** Comment before init db
+
+    place of file: *maple/topic/forms.py*
+    #+BEGIN_SRC python
+    category = SelectField(
+        _('Category:'),
+        choices=[(b.id, b.board + '   --' + b.parent_board)
+                 for b in Board.query.all()],
+        coerce=int)
+    #+END_SRC
+
+*** Init sql
+    #+BEGIN_SRC python
+    python manage.py db init 
+    python manage.py db migrate -m "first migrate"
+    python manage.py db upgrade
+    #+END_SRC
+    *Ok*,please recovery *maple/topic/forms.py*
+
+*** Create admin account
+    #+BEGIN_SRC shell
+python manager.py create_user
+    #+END_SRC
+
+*** Login and visit admin 
+    *Ok* ,visit forums.localhost:5000/admin to add something
+   
+** Demo
+   Please visit [[https://forums.honmaple.org][forums.honmaple.org]] 
+
+** License
+   Honmaple is open-sourced software licensed under the GPL3 license
+
+
+
