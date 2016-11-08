@@ -1,4 +1,4 @@
-### Activity for Tsinghua
+### Activity for School
 
 #### Environments
 
