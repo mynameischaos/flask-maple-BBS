@@ -13,3 +13,12 @@ from werkzeug.contrib.fixers import ProxyFix
 app.wsgi_app = ProxyFix(app.wsgi_app)
 if __name__ == '__main__':
     app.run()
+
+
+
+# run postgresql server
+# pg_ctl - D / usr / local / var / postgres - l / usr / local / var / postgres / server.log start
+# stop server
+# pg_ctl -D /usr/local/var/postgres stop -s -m fast
+# run redis
+# redis-server
