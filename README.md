@@ -37,14 +37,14 @@ git clone https://github.com/mynameischaos/flask-maple-BBS.git
 
 ##### Install necessary package
 
-* sudo pip install -r requirements.txt
+* sudo pip3 install -r requirements.txt
 
 ##### Install flask-maple
 
 ```
 git clone https://github.com/honmaple/flask-maple
 cd flask-maple
-python setup.py install
+python3 setup.py install
 ```
 ##### Install Redis
 
