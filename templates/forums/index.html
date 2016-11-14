@@ -3,12 +3,12 @@
 {{ breadcrumb() }}
 {% cache 60 %}
 {{ index_title() }}
-<div class="row hidden-sm hidden-xs">
-    {{ item(_('Forums'),url_for('forums.forums'),"icon-comments","#F86334")}}
-    {{ item(_('Wiki'),url_for('docs.docs'),"icon-book","#eeccaa")}}
-    {{ item(_('Blog'),'#',"icon-tasks")}}
-    {{ item(_('Good'),url_for('topic.good'),"icon-globe","#017e66")}}
-</div>
+{#<div class="row hidden-sm hidden-xs">#}
+{#    {{ item(_('Forums'),url_for('forums.forums'),"icon-comments","#F86334")}}#}
+{#    {{ item(_('Wiki'),url_for('docs.docs'),"icon-book","#eeccaa")}}#}
+{#    {{ item(_('Blog'),'#',"icon-tasks")}}#}
+{#    {{ item(_('Good'),url_for('topic.good'),"icon-globe","#017e66")}}#}
+{#</div>#}
 {% endcache %}
 <div class="row">
     <div class="col-md-9">
@@ -29,23 +29,94 @@
 </div>
 {% endblock %}
 {% macro index_title() -%}
-<div class="panel panel-default hidden-xs">
-    <div class="panel-body" style="text-align: center;">
-        <div class="media" style="width: 480px; margin:0px auto; text-align: left;">
-            <div class="media-left">
-                <i class="icon-gift media-object" style="font-size: 55px; width: 55px; color: #333;"></i>
-            </div>
-            <div class="media-body" style="line-height: 200%; text-align: center;">
-                <div style="font-size: 15px">
-                    Honmaple {{ _('Office Source Code')}} <a href="https://github.com/honmaple/maple-bbs" target="_blank">Honmaple</a>
+
+{#<div class="panel panel-default hidden-xs">#}
+{#    <div class="panel-body" style="text-align: center;">#}
+{#        <div class="media" style="width: 480px; margin:0px auto; text-align: left;">#}
+{#            <div class="media-left">#}
+{#                <i class="icon-gift media-object" style="font-size: 55px; width: 55px; color: #333;"></i>#}
+{#            </div>#}
+{#            <div class="media-body" style="line-height: 200%; text-align: center;">#}
+{#                <div style="font-size: 15px">#}
+{#                    Honmaple {{ _('Office Source Code')}} <a href="https://github.com/honmaple/maple-bbs" target="_blank">Honmaple</a>#}
+{#                </div>#}
+{#                <div>#}
+{#                    <code style="padding: 4px 10px;">git clone git@github.com:honmaple/maple-bbs.git</code>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+
+
+{#<div class="panel panel-default hidden-xs">#}
+{#    <div class="panel-body" style="text-align: center;">#}
+{#        <div class="media" style="margin:0px auto; text-align: center;">#}
+{#            <img src="/static/images/view3.jpg" style="height: 250px; width: 100%">#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+
+<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="panel-body" style="text-align: center;">
+                <div class="media" style="margin:0px auto; text-align: center;">
+                    <img src="/static/images/Tsinghua/change1.jpg" style="height: 300px; width: 100%">
                 </div>
-                <div>
-                    <code style="padding: 4px 10px;">git clone git@github.com:honmaple/maple-bbs.git</code>
+            </div>
+        </div>
+        <div class="item">
+            <div class="panel-body" style="text-align: center;">
+                <div class="media" style="margin:0px auto; text-align: center;">
+                     <img src="/static/images/Tsinghua/change2.jpg" style="height: 300px; width: 100%">
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="panel-body" style="text-align: center;">
+                <div class="media" style="margin:0px auto; text-align: center;">
+                    <img src="/static/images/Tsinghua/change3.jpg" style="height: 300px; width: 100%">
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="panel-body" style="text-align: center;">
+                <div class="media" style="margin:0px auto; text-align: center;">
+                    <img src="/static/images/Tsinghua/change4.jpg" style="height: 300px; width: 100%">
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="panel-body" style="text-align: center;">
+                <div class="media" style="margin:0px auto; text-align: center;">
+                    <img src="/static/images/Tsinghua/change5.jpg" style="height: 300px; width: 100%">
                 </div>
             </div>
         </div>
     </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel"
+       data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel"
+       data-slide="next">&rsaquo;</a>
+
 </div>
+<script type="text/javascript">
+$('#myCarousel').carousel({
+	interval: 5000
+})
+</script>
+
 {%- endmacro %}
 
 {% macro item(name,url,icon,color="#337ab7") %}

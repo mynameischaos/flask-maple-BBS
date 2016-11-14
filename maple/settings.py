@@ -12,7 +12,7 @@
 # **************************************************************************
 from flask_babelex import gettext as _
 setting = {
-    'title': 'Honmaple',
-    'description': _('I love freedom more than life.'),
-    'picture': 'static/images/header.png'
+    'title': 'AcTsinghua',
+    'description': _('Activity for Tsinghua!'),
+    'picture': 'static/images/header3.jpg'
 }
