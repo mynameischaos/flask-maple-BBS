@@ -63,4 +63,4 @@ SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:zhonghuasong@localhost/db'
 AVATAR_FOLDER = 'avatars/'
 
 # Locale
-LANGUAGES = {'en': 'English', 'zh': 'Chinese'}
+LANGUAGES = {'zh': 'Chinese', 'en': 'English'}

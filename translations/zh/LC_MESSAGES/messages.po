@@ -290,7 +290,7 @@ msgstr "公共"
 #: templates/setting/babel.html:26 templates/setting/password.html:11
 #: templates/setting/privacy.html:11 templates/setting/setting.html:17
 msgid "Timezone and Locale"
-msgstr "时区及语言设置"
+msgstr "时区与语言设置"
 
 #: templates/setting/babel.html:17 templates/setting/password.html:8
 #: templates/setting/privacy.html:8 templates/setting/setting.html:4
@@ -492,9 +492,9 @@ msgstr "%(n)s的收藏"
 msgid "followers of %(n)s"
 msgstr "%(n)s的粉丝"
 
-#: maple/extensions.py:130
+#: maple/extensions.py:122
 msgid "Please login to access this page."
-msgstr "这个页面要求登陆，请登陆"
+msgstr "请登录后,查看此页面!"
 
 #: maple/settings.py:16
 msgid "I love freedom more than life."
@@ -683,6 +683,7 @@ msgstr "上传头像"
 #~ msgid "Office Source Code"
 #~ msgstr "官方网站源码"
 
-#~ msgid "more good topics"
-#~ msgstr "查看更多精华文章"
+#: templates/forums/index.html:14
+msgid "more good topics"
+msgstr "查看更多精华帖子"
 

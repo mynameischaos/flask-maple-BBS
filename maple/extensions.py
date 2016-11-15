@@ -1,5 +1,5 @@
 
-from flask import request, g
+from flask import request, g, jsonify
 from flask.json import JSONEncoder
 from flask_wtf.csrf import CsrfProtect
 from flask_maple import Bootstrap, Error, Captcha
@@ -118,7 +118,9 @@ def register_login(app):
     login_manager.init_app(app)
     login_manager.login_view = "auth.login"
     login_manager.session_protection = "strong"
-    login_manager.login_message = _("Please login to access this page.")
+    #login_manager.login_message = u"Please login to access this page."
+    lg_mg = _('请登陆后, 查看此页面!')
+    login_manager.login_message = str(lg_mg)
     # login_manager.anonymous_user = Anonymous
     from maple.user.models import User
 
