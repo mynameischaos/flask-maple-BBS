@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: permission.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-07-16 17:18:48 (CST)
-# Last Update:星期日 2016-7-24 12:57:59 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import (url_for, jsonify, g, flash, redirect, request, abort)
 from flask_login import login_required
 from flask_principal import Permission

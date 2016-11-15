@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: views.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-05-20 18:04:43 (CST)
-# Last Update:星期日 2016-7-24 17:16:21 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import (render_template, request, redirect, url_for, jsonify,
                    current_app)
 from flask.views import MethodView

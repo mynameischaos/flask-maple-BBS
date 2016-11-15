@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: orderby.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-06-05 10:15:58 (CST)
-# Last Update:星期三 2016-7-20 17:12:4 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import request, current_app
 from maple.forums.models import Board
 from maple.topic.models import Topic

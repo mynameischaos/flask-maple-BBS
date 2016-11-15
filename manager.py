@@ -1,12 +1,4 @@
-# !/usr/bin/env python
-# -*- coding: utf-8 -*-
-# *************************************************************************
-#   Copyright © 2015 JiangLin. All rights reserved.
-#   File Name: db_create.py
-#   Author:JiangLin
-#   Mail:xiyang0807@gmail.com
-#   Created Time: 2016-02-11 13:34:38
-# *************************************************************************
+
 from flask import url_for
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand

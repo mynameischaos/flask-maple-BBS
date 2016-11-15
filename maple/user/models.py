@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: models.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-05-20 13:24:19 (CST)
-# Last Update:星期二 2016-8-2 20:47:53 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from maple import db
 from maple.tag.models import Tags
 from maple.mine.models import Follow

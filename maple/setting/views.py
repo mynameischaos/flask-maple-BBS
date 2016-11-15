@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: views.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-05-20 18:04:43 (CST)
-# Last Update:星期一 2016-7-25 18:58:28 (CST)
-#          By:jianglin
-# Description: user setting include password , infor and privacy
-# **************************************************************************
+
 from flask import (render_template, request, url_for, redirect, flash)
 from flask_maple.forms import flash_errors
 from flask_login import current_user, login_required

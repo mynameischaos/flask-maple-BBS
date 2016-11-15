@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: admin.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-05-31 21:42:11 (CST)
-# Last Update:星期日 2016-8-7 18:45:36 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from maple import db, app
 from maple.forums.models import Board, Count, Notice
 from maple.tag.models import Tags

@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: urls.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-07-15 18:43:51 (CST)
-# Last Update:星期一 2016-8-1 17:16:41 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from maple.forums.urls import site as forums_site
 from maple.topic.urls import site as topic_site
 from maple.board.urls import site as board_site

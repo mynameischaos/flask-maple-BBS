@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: users.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-07-02 20:12:26 (CST)
-# Last Update:星期六 2016-7-30 13:44:11 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from maple import db
 from .admin import BaseModelView
 from maple.user.models import User, UserInfor, UserSetting, Role

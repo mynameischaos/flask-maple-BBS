@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: helpers.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-05-20 13:56:43 (CST)
-# Last Update:星期日 2016-8-7 16:58:36 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import abort, current_app, Markup
 from flask_login import current_user
 from time import time

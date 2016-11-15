@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: topics.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-07-02 20:15:46 (CST)
-# Last Update:星期六 2016-7-2 20:17:44 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from maple import db
 from maple.topic.models import Topic, Reply
 from maple.filters import Filters

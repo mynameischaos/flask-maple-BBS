@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: base.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-07-16 15:25:16 (CST)
-# Last Update:星期日 2016-8-7 14:0:7 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask_principal import RoleNeed, UserNeed, identity_loaded
 from flask_login import current_user
 from flask import request, abort

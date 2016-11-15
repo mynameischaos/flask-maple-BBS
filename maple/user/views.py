@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: views.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-05-20 18:04:43 (CST)
-# Last Update:星期一 2016-7-25 20:57:42 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import (render_template, request, g, url_for, redirect, abort,
                    current_app)
 from flask_login import current_user

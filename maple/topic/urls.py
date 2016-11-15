@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: urls.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-07-15 18:12:22 (CST)
-# Last Update:星期六 2016-7-30 20:47:52 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import Blueprint
 from .views import ask, good, preview, vote_up, vote_down, edit
 from .views import TopicAPI, ReplyAPI

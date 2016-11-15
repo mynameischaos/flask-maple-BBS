@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: models.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-05-20 13:32:12 (CST)
-# Last Update:星期六 2016-7-30 12:5:38 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask_login import current_user
 from maple import redis_data
 from datetime import datetime

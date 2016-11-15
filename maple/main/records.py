@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: records.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-06-04 19:57:49 (CST)
-# Last Update:星期二 2016-8-2 21:58:28 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from time import time
 from datetime import datetime
 from maple import redis_data

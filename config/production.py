@@ -1,15 +1,3 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: production.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-05-20 12:31:46 (CST)
-# Last Update:星期日 2016-8-7 19:23:58 (CST)
-#          By: jianglin
-# Description:
-# **************************************************************************
 from datetime import timedelta
 from os import path, pardir
 

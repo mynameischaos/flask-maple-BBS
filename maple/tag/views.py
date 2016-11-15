@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: views.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-05-20 13:18:19 (CST)
-# Last Update:星期一 2016-8-1 16:40:43 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import render_template, request, url_for
 from maple import app
 from maple.helpers import is_num

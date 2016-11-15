@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: permission.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-07-16 16:40:53 (CST)
-# Last Update:星期日 2016-8-7 14:3:10 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import (redirect, url_for, flash, request, jsonify, g)
 from flask_login import login_required, current_user
 from maple.permission.base import RestBase

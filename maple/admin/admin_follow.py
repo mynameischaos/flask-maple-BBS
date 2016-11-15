@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: follows.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-07-02 20:18:14 (CST)
-# Last Update:星期日 2016-7-24 19:57:23 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from maple import db
 from maple.user.models import User
 from .admin import BaseModelView

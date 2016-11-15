@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: controls.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-06-15 10:22:42 (CST)
-# Last Update:星期日 2016-8-7 17:41:8 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import current_app
 from flask_login import current_user
 from sqlalchemy.sql import func

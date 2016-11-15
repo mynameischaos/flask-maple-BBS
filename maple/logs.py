@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: logs.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-07-26 15:10:14 (CST)
-# Last Update:星期二 2016-7-26 16:38:55 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 import os
 import logging
 from logging.handlers import SMTPHandler

@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: controls.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-06-15 10:03:28 (CST)
-# Last Update:星期一 2016-7-25 15:44:44 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask_login import logout_user, current_user
 from maple import db
 

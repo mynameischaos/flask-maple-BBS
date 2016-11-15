@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: __init__.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-05-20 12:35:52 (CST)
-# Last Update:星期日 2016-8-7 13:44:23 (CST)
-#          By:jianglin
-# Description:
-# **************************************************************************
+
 from flask import Flask, g, send_from_directory, request
 from maple.extensions import (register_login, register_redis, register_mail,
                               register_cache)

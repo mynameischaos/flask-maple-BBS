@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: views.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-06-25 00:50:56 (CST)
-# Last Update:星期二 2016-7-26 17:58:36 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import (url_for, redirect, flash, send_from_directory, current_app)
 from flask_maple.forms import flash_errors
 from flask_login import login_required

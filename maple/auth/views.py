@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: views.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-06-17 13:25:39 (CST)
-# Last Update:星期六 2016-7-30 12:23:21 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import jsonify
 from flask_maple import Auth
 from flask_login import login_required, current_user

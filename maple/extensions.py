@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: extensions.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-05-20 13:02:50 (CST)
-# Last Update:星期日 2016-8-7 14:12:35 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import request, g
 from flask.json import JSONEncoder
 from flask_wtf.csrf import CsrfProtect

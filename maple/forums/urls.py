@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: urls.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-07-15 18:48:57 (CST)
-# Last Update:星期二 2016-8-2 20:2:28 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import Blueprint
 from flask_login import login_required
 from .views import (index, forums, notice, userlist, message, about, help,

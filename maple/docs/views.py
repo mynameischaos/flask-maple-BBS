@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: views.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-06-15 00:11:56 (CST)
-# Last Update:星期一 2016-8-1 17:16:55 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import Blueprint, render_template, send_from_directory
 from os import path as ph
 

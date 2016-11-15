@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: forms.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-06-03 19:27:58 (CST)
-# Last Update:星期二 2016-7-26 10:38:39 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask_wtf import Form
 from wtforms import SelectField, StringField, TextAreaField
 from wtforms.validators import DataRequired

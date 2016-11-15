@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: admin_file.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-07-02 20:24:36 (CST)
-# Last Update:星期六 2016-7-2 20:42:24 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask_admin.contrib.sqla import ModelView
 from flask import Markup, url_for
 from flask_admin import form

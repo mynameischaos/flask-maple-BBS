@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: urls.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-07-15 19:23:48 (CST)
-# Last Update:星期日 2016-7-24 14:10:2 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import Blueprint, abort, g
 from maple.user.models import User
 from maple.forums.forms import MessageForm

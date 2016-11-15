@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: models.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-05-20 13:24:19 (CST)
-# Last Update:星期六 2016-7-23 20:58:12 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from maple import db
 from datetime import datetime
 from sqlalchemy.dialects.postgresql import JSON

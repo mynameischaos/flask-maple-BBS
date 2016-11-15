@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: urls.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-07-15 19:19:41 (CST)
-# Last Update:星期日 2016-7-24 16:53:43 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask import Blueprint
 from flask_login import login_required
 from maple.helpers import register_api

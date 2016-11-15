@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# -*- coding=UTF-8 -*-
-# **************************************************************************
-# Copyright © 2016 jianglin
-# File Name: permission.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2016-06-09 19:53:35 (CST)
-# Last Update:星期日 2016-7-24 12:55:47 (CST)
-#          By:
-# Description:
-# **************************************************************************
+
 from flask_principal import Permission, RoleNeed
 from collections import namedtuple
 from functools import partial
