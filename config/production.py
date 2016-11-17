@@ -8,7 +8,7 @@ SECURITY_PASSWORD_SALT = 'you will never guess'
 
 # avatar upload directory
 AVATAR_FOLDER = path.abspath(path.join(
-    path.dirname(__file__), pardir, 'avatars'))
+    path.dirname(__file__), pardir, 'static/avatars'))
 # avatar generate range
 AVATAR_RANGE = [122, 512]
 

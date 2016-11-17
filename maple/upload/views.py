@@ -26,5 +26,5 @@ def avatar_file(filename):
                                                       'avatars/'))
     if not os.path.exists(os.path.join(avatar_path, filename)):
         avatar_path = os.path.join(current_app.static_folder, 'images/')
-        filename = 'Moo.png'
+        filename = 'default_avatar.jpg'
     return send_from_directory(avatar_path, filename)
