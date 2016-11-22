@@ -164,7 +164,7 @@ msgstr "社区会员:"
 
 #: templates/base/panel.html:95
 msgid "Total number of topics:"
-msgstr "主题总数:"
+msgstr "帖子总数:"
 
 #: templates/base/panel.html:96
 msgid "Total number of posts:"

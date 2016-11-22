@@ -7,6 +7,7 @@ from maple import app, mail, db, redis_data
 from maple.user.models import User, UserInfor, UserSetting, Role
 from maple.main.models import set_email_send
 from datetime import datetime, timedelta
+from maple.main.models import RedisData
 
 
 def check_time(func):
@@ -66,6 +67,7 @@ class Login(Auth):
     def confirm_models(self, user):
         user.is_confirmed = True
         self.db.session.commit()
+        RedisData.set_user()
 
 
 auth = Login(app, db=db, mail=mail, user_model=User, use_principal=True)

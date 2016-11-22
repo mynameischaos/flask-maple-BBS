@@ -10,12 +10,14 @@ class RedisData(object):
         pipe = redis_data.pipeline()
         '''用户发帖数'''
         user = 'user:%s' % str(current_user.id)
+        pipe.hincrby('users', 'topics', 1)
         pipe.hincrby(user, 'topic', 1)
         pipe.hincrby(user, 'all:topic', 1)
         pipe.execute()
 
     def set_replies(qid):
         pipe = redis_data.pipeline()
+        pipe.hincrby('topics', 'replies', 1)
         pipe.hincrby('topic:%s' % str(qid), 'replies', 1)
         pipe.execute()
 
@@ -32,7 +34,8 @@ class RedisData(object):
         redis_data.hincrby('user:%s' % str(user.id), 'love', num)
 
     def set_user():
-        redis_data.hincrby('user:%s' % str(current_user.id), 'topic', 1)
+        redis_data.hincrby('users', 'numbers', 1)
+        #redis_data.hincrby('user:%s' % str(current_user.id), 'topic', 1)
 
     def set_user_all():
         redis_data.hincrby('user:%s' % str(current_user.id), 'all_topic', 1)
@@ -48,6 +51,20 @@ class RedisData(object):
     def get_pages(large, little):
         pages = redis_data.zscore(large, little)
         return pages
+
+
+    def get_all_replies(self):
+        replies_count_num = redis_data.hget('topics', 'replies')
+        return replies_count_num
+
+    def get_all_users(self):
+        users_num = redis_data.hget('users', 'numbers')
+        return users_num
+    def get_all_topics(self):
+        topics_num = redis_data.hget('users', 'topics')
+        return topics_num
+
+
 
 
 def set_email_send(uid):

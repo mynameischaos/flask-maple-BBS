@@ -68,13 +68,20 @@ def before_request():
     else:
         mark_online(request.remote_addr)
     g.get_online = get_online()
+    g.get_forums_count = get_forums_count()
 
 
+# 获取当前在线用户
 def get_online():
     from maple.main.records import load_online_users
     return (load_online_users(1), load_online_users(2), load_online_users(3),
             load_online_users(4), load_online_users(5))
 
+# 获取社区会员 主题总数 回帖数
+def get_forums_count():
+    from maple.main.models import RedisData
+    rd = RedisData()
+    return rd.get_all_users(), rd.get_all_topics(), rd.get_all_replies()
 
 @app.route('/robots.txt')
 @app.route('/favicon.ico')

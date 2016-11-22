@@ -74,3 +74,4 @@ def load_online_sign_users():
     minutes = range(config['ONLINE_LAST_MINUTES'])
     return redis_data.sunion(['online_sign_users:%d' % (current - x)
                               for x in minutes])
+

@@ -92,9 +92,10 @@
     </div>
     <ul class="list-group">
         {#TODO#}
-        <li class="list-group-item">{{ _('Total number of registered users:')}} 统计还没有做!</li>
-        <li class="list-group-item">{{ _('Total number of topics:') }} 统计还没有做! </li>
-        <li class="list-group-item">{{ _('Total number of posts:') }} 统计还没有做! </li>
+        {% set forums_count = g.get_forums_count %}
+        <li class="list-group-item">{{ _('Total number of registered users:')}} {{ forums_count[0] }}</li>
+        <li class="list-group-item">{{ _('Total number of topics:') }} {{ forums_count[1] }} </li>
+        <li class="list-group-item">{{ _('Total number of posts:') }} {{ forums_count[2] }} </li>
     </ul>
 </div>
 {%- endmacro %}
